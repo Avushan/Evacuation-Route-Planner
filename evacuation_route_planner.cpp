@@ -58,7 +58,7 @@ bool isSafeCell(int r, int c) {
     return true;
 }
 
-// Use BFS (Dijkstra) to find the safest path
+// Use BFS to find the safest path
 vector<pair<int, int>> computeSafePath(pair<int, int> start) {
     vector<vector<bool>> visited(rows, vector<bool>(cols, false));
     queue<pair<pair<int, int>, int>> q; // ((row, col), steps)
